@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: "sora";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/Sora-Light.ttf");
+}
+:root {
+  --color_005025: #005025;
+  --color_fff: #fff;
+}
+body {
+  font-family: sora;
+}
+.header {
+  background-color: var(--color_005025);
+}
+.header_navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+.left-nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.left-nav .logo img {
+  width: 34px;
+  position: relative;
+  top: -4px;
+}
+.left-nav .logo span {
+  color: var(--color_fff);
+
+  font-size: 24px;
+  font-weight: 600;
+}
+.center-nav ul {
+  display: flex;
+  gap: 4rem;
+}
+.center-nav ul li a {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+}
+.center-nav ul li a.active {
+  color: var(--color_fff);
+  font-weight: 600;
+}
+.center-nav ul li a.active::after {
+  content: "";
+  display: block;
+  width: 23px;
+  height: 2px;
+  border-bottom: 2px solid #fff;
+  position: relative;
+  left: 15px;
+  top: 3px;
+}
+
+.right-nav .link_nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.right-nav .link_nav a {
+  color: var(--color_fff);
+}
+
+.right-nav .link_nav a.active {
+  color: #000;
+  background-color: #fff;
+  padding: 9px 12px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-weight: 700;
+}
+.header_content {
+  display: flex;
+  align-items: center;
+}
+.content_img img {
+  width: 627px;
+  height: 707px;
+}
+.content_text h1 {
+  font-size: 60px;
+  color: var(--color_fff);
+  font-weight: 600;
+}
+.content_text p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 2rem 0;
+}
+.content_text a {
+  color: #000;
+  background-color: #fff;
+  font-size: 14px;
+  padding: 10px 17px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
